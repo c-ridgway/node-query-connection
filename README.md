@@ -100,7 +100,7 @@ qc.isValidPort(1234);
 ```
 
 #### External library credits - win32
-Many of the core utilities came from msys2:
+Most of the core utilities come from msys2:
 https://www.msys2.org/
 
 Dig (BIND 9) provided by:
