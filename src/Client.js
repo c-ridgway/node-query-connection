@@ -78,6 +78,11 @@ class Client {
       process.env.PATH = process.env.PATH + ";" + path.join(__dirname, '..', 'bin', process.platform);
 
       require('child_process').exec(cmd, function (error, stdout, stderr) {
+        process.env.PATH = oldPath;
+
+        if (error) return reject(error)
+        if (stderr) return reject(stderr)
+
         let output = stdout
           .split(/\r?\n/) // Split lines into array
           .filter((element, index, arr) => arr.indexOf(element) === index) // Remove duplicates
@@ -85,8 +90,6 @@ class Client {
           .filter(element => element); // Remove NaN elements
 
         resolve(output);
-
-        process.env.PATH = oldPath;
       });
 
       /*let resolver = new Resolver(resolve);
