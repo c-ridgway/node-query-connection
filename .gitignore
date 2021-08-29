@@ -1,0 +1,18 @@
+.old
+
+# IDE
+.vscode
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+.env.test

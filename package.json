@@ -1,0 +1,29 @@
+{
+  "name": "query-connection",
+  "version": "1.2.1",
+  "description": "This is a crossplatform (Win32/Linux) network connection query library.",
+  "main": "index.js",
+  "scripts": {
+    "production": "NODE_ENV=production node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-ridgway/node-query-connection.git"
+  },
+  "keywords": [
+    "crossplatform",
+    "linux",
+    "forwarding",
+    "validate",
+    "wan",
+    "port",
+    "pid",
+    "async",
+    "portforward"
+  ],
+  "author": "-nom-",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
