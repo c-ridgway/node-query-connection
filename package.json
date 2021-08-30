@@ -1,6 +1,6 @@
 {
   "name": "query-connection",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "This is a crossplatform (Win32/Linux) network connection query library.",
   "main": "index.js",
   "scripts": {
